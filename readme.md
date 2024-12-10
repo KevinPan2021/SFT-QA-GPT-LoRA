@@ -9,7 +9,7 @@ This project aims to preform Question and Answering from Context using Decoder o
 [Kaggle sports classification](https://www.kaggle.com/datasets/rtatman/questionanswer-dataset/data)
 
 
-### Model Weights:
+### Pretrained Model Weights:
 [GPT2 huggingface pretained weights](https://huggingface.co/openai-community/gpt2)
 
 
