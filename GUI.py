@@ -1,5 +1,6 @@
 application_name = 'Question Answering from Context'
 # pyqt packages
+from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox
 from PyQt5.QtGui import QTextCursor, QTextCharFormat
 from PyQt5.QtCore import QThread, pyqtSignal
@@ -9,7 +10,6 @@ from torch.nn import functional as F
 import tiktoken
 import sys
 
-from qt_main import Ui_Application
 from gpt import GPT2
 from main import compute_device
 
@@ -96,13 +96,11 @@ class inference(QThread):
 
 
 
-class QT_Action(Ui_Application, QMainWindow):
+class QT_Action(QMainWindow):
     def __init__(self):
         # system variable
         super(QT_Action, self).__init__()
-        self.setupUi(self)
-        self.retranslateUi(self)
-        self.setWindowTitle(application_name) # set the title
+        uic.loadUi('qt_main.ui', self)
         
         # runtime variable
         self.model = None
