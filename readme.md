@@ -1,4 +1,4 @@
-# Q%A from context using GPT finetuning with LoRA
+# Q&A from context using GPT finetuning with LoRA
 
 This project aims to preform Question and Answering from Context using Decoder only Transformer (GPT2) pretrained weights loaded from huggingface finetune on Stanford QA dataset with LoRA.
 
